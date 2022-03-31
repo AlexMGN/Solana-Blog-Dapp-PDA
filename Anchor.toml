@@ -1,0 +1,15 @@
+[features]
+seeds = false
+safety_checks = true
+[programs.localnet]
+blog_dapp = "Gy2T8gX6mcgVe57vxmMUg888iRTsLUtR8GDXpHHYox2W"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/alexandremignon/.config/solana/dev.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
